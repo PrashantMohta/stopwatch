@@ -1,0 +1,82 @@
+
+.banner{
+  font-size: 25px;
+  box-sizing: border-box;
+  font-size: 25px;
+  width:100%;
+  text-align: left;
+  background-color:#FFDDDD;
+  padding:3px 10px;
+  font-weight: bold;
+  color:#F0a0a0;
+  user-select: none;
+}
+
+.stopwatch{
+  box-sizing: border-box;
+  text-align:center;
+  background-color:#Fcaaac;
+  width:100%;
+}
+.stopwatch__time{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size:15vmin;
+  padding:5vmin 0px;
+  color:#FFDDDD;
+  
+  user-select: none;
+}
+.stopwatch__button{
+  box-sizing: border-box;
+  font-size:7vmin;
+  margin:5vmin;
+  padding:3vmin;
+  border-radius:10px;
+  border: 2px solid #FFDDDD;
+  background-color:#F0a0a0;
+  color:#FFDDDD;
+  z-index:0;
+  user-select: none;
+}
+.stopwatch__lapgroup{
+  box-sizing: border-box;
+  width:100%;
+  position:absolute;
+  bottom:0px;
+  z-index:-10;
+}
+.stopwatch__laps{
+  box-sizing: border-box;
+  text-align:left;
+  font-size: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height:calc(200px);
+}
+@media screen and (max-height: 600px) {
+  .stopwatch__laps{
+    box-sizing: border-box;
+    text-align:left;
+    font-size: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height:calc(100px);
+  }
+}
+.stopwatch__lapsheading{
+  box-sizing: border-box;
+  text-align:left;
+  font-size: 20px;
+  padding:5px 5px;
+  display: block;
+  color:#FFDDDD;
+}
+.stopwatch__lap{
+  box-sizing: border-box;
+  color:#FFDDDD;
+  background-color:#F0a0a0;
+  padding:5px 5px;
+  margin:2px;
+}
